@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+        }
+
+        header{
+            padding: 10px;
+            background-color: white;
+            margin: 10px;
+        }
+
+        #titulo{
+            text-align: center;
+        }
+
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px;
+        }
+
+        footer{
+            background-color: black;
+            color: rgb(191, 148, 148);
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+
+        footer>p{
+            margin: 0px;
+        }
+
+        #escritor{
+            background-color: grey;
+        }
+
+        nav{
+            background-color: rgb(49, 49, 49);
+            padding: 3px;
+            box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.612);
+        }
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        nav>a:hover{
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="titulo">Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+
+        </section>
+        <section id="noticias">
+            <article>
+                <aside>
+                    <h2>Noticias sobre tude</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta nemo in odio eum cupiditate incidunt rem nisi. Quidem nam pariatur, consequatur aliquam animi vitae sapiente, velit vero eveniet amet fugiat!</p>
+                    <p id="escritor">Artigo escrito por Nhem Nhem</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por M.M</p>
+    </footer>
+</body>
+</html>
