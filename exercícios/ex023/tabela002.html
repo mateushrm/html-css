@@ -23,6 +23,7 @@
             margin: auto;
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th{
@@ -31,8 +32,19 @@
         }
 
         thead, tfoot{
-            background-color: grey;
+            background-color: rgb(24, 24, 24);
             color: white;
+        }
+
+        thead>tr>th{
+            position: sticky;
+            top: -1px;
+            background-color: rgb(24, 24, 24);
+
+        }
+
+        tbody>tr:nth-child(2n){
+            background-color: rgb(157, 157, 157);
         }
 
         .num{
@@ -47,6 +59,13 @@
         a:hover{
             text-decoration: underline;
         }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgb(170, 169, 169);
+        }
     </style>
 </head>
 <body>
@@ -58,6 +77,7 @@
     </header>
     <!--Anatomia para tabelas grandes
         table
+            caption
             thead
                 tr,td,th
             tbody
@@ -66,10 +86,13 @@
                 tr,td,th
     -->
     <table>
+        <caption>
+            População das Unidades Federativas
+        </caption>
         <thead>
             <tr>
-                <th>Estados</th>
-                <th>População</th>
+                <th scope="col">Estados</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         
@@ -186,7 +209,7 @@
 
         <tfoot>
             <tr>
-                <th>
+                <th scope="row">
                     Total de Habitantes
                 </th>
                 <td class="num"><strong>190.732.694</strong></td>
